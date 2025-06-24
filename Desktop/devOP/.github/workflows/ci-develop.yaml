@@ -1,7 +1,10 @@
 name: Lint HTML and CSS
 
 on:
-  pull_request:
+ pull_request:
+    branches: [develop]
+    types: [opened, synchronize] 
+  push:
     branches: [develop]
 
 jobs:
